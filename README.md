@@ -1,11 +1,11 @@
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1AHJIH6x8JwlPKIOW6J6YovJjs8BUjfMQ?authuser=1#scrollTo=OGdKitdexmid)
 
 
 
 
 
 # LeNet
-Hi today we discuss about the LeNet-5. it  was one of classic and very supper popular such as long time 
+ Today we discuss about the LeNet-5. it  is one of classic and very supper popular such as long time 
 fist we discuss the architecture theoretically.
 ![LeNet-5](Architecture-of-LeNet-5-one-of-the-first-initial-architectures-of-CNN-Figure-from-29.png)
 
