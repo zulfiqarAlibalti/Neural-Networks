@@ -31,3 +31,5 @@ It is referred to as a convolutional layer in preference to a completely linked 
 
 
 # Reference
+
+[Research Article](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)
