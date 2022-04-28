@@ -10,25 +10,25 @@ Hi today we discuss about the LeNet-5. it  was one of classic and very supper po
 fist we discuss the architecture theoretically.
 ![LeNet-5](Architecture-of-LeNet-5-one-of-the-first-initial-architectures-of-CNN-Figure-from-29.png)
 
-This the original image of LeNet-5 from research paper by Lechun eta al, 1998.
+The above diagram shows a description of the LeNet-5 architecture as shown in the original document.
 
-As LeNet-5 indicates there are 5 Layers with 2 Convolutional and three fully connected layers.Every convolutional layer has three parts such as Pooling Layer 
-Convolution Layers,and Non-Linear activation function
+**Layer 1-** The first layer is the input layer; It is generally not considered a layer of the network as nothing is learned on that layer. The input layer supports 32x32, and these are the dimensions of the images that will be passed to the next layer.
 
-LeNet start with input image as gray-scale image as from above figure we can see that 
-the input has 
-<img src="https://render.githubusercontent.com/render/math?math=32 \times 32 "> (bascially LeNet was build for MNIST data set)
-and it passes through first convolutional layer and map  with 6
-a filters of size <img src="https://render.githubusercontent.com/render/math?math=5 \times 5 "> with stride of 1.Then after this convoltional 
-the dimension of image changes into <img src="https://render.githubusercontent.com/render/math?math=28 \times 28 \times 6"> and how we get converted this <img src="https://render.githubusercontent.com/render/math?math=32 \times 32 "> images into <img src="https://render.githubusercontent.com/render/math?math=28 \times 28 ">
-is by pure arthimatics of input layer, which can be found using the formula below 
+The grayscale images used in the research paper had their pixel values normalized from 0 to 255, to values between -0.1 and 1.175. The reason for normalization is to ensure that the batch of images have a mean of 0 and a standard deviation of 1, the benefits of this is seen in the reduction in the amount of training time. In the image classification with LeNet-5 example below, we’ll be normalizing the pixel values of the images to take on values between 0 to 1.
 
-![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Bn&plus;2p-f%7D%7Bs%7D&plus;1%20%5Ctimes%20%5Cfrac%7Bn&plus;2p-f%7D%7Bs%7D&plus;1)
+**Layer 2-** Layer C1 is a convolution layer with six 5 × 5 convolution kernels, and the feature allocation size is 28 × 28, whereby input image information can be avoided.
 
+**Layer 3-** Layer S2 is the undersampling / grouping layer which generates 6 function graphs of length 14x14. Each cell in every function map is attached to 2x2 neighborhoods at the corresponding function map in C1.
 
+**Layer 4 -** C3 convolution layer encompass sixteen 5x5 convolution kernels The input of the primary six function maps C3 is every continuous subset of the 3 function maps in S2, the access of the following six function maps comes from the access of the 4 continuous subsets and the input for the following 3 function maps is crafted from the 4 discontinuous subsets.Finally, the input for the very last function diagram comes from all the S2 function diagrams.
 
+**Layer 5-** Layer S4 is just like S2 with a length of 2x2 and an output of sixteen 5x5 function graphics.
 
+**Layer 6-** Layer C5 is a convolution layer with one hundred twenty convolution cores of length 5x5. Each cell is attached to the 5x5 neighborhoods along sixteen S4 function charts. Since the function chart length of S4 is likewise 5x5, the output length of C5 is 1 * 1, so S4 and C5 are absolutely linked.
+
+It is referred to as a convolutional layer in preference to a completely linked layer due to the fact if the input of LeNet-5 becomes large and its shape stays unchanged, then its output length is bigger than 1x1, i.e. now no longer a completely linked layer.
+
+**Layer 7-** The F6 layer is connected to C5 and 84 feature charts are generated. In the grayscale images used in the research, the pixel values ​​from 0 to 255 were normalized to values ​​between -0.1 and 1,175 The reason for normalization is to make sure the image stack has a mean of 0 and a standard deviation of 1.
 
 
 # Reference
-[![Research paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf)]
