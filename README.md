@@ -4,7 +4,7 @@
 
 
 
-# LeNet
+# LeNet-5  Architecture and Application to Document Recognition
  Today we discuss about the LeNet-5. it  is one of classic and very supper popular such as long time 
 fist we discuss the architecture theoretically.
 ![LeNet-5](Architecture-of-LeNet-5-one-of-the-first-initial-architectures-of-CNN-Figure-from-29.png)
